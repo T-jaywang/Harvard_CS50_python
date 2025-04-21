@@ -14,6 +14,7 @@
     #for line in file:
         #print("hello,",line.rstrip())
       	
+
 names = []
 
 with open("name.txt") as file:
