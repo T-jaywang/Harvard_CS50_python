@@ -10,6 +10,49 @@
 #     file.write(f"{name}\n")
 
 # first version for read
-with open("name.txt","r") as file:
+#with open("name.txt","r") as file:
+    #for line in file:
+        #print("hello,",line.rstrip())
+      	
+names = []
+
+with open("name.txt") as file:
     for line in file:
-        print("hello,",line.rstrip())
+        names.append(line.rstrip())
+        
+for name in sorted(names):
+    print(f"hello,{name}")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
