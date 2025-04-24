@@ -1,6 +1,6 @@
 import pytest
 
-from unit_test_calculator import square
+from s_unit_test_calculator import square
 
 
 def test_postive():

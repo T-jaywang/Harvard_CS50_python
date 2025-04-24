@@ -1,4 +1,4 @@
-from hello import hello
+from p_hello import hello
 
 
 def test_default():
