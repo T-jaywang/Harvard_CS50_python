@@ -10,7 +10,7 @@ class Student(Wizard):
         self.house = house
 
 
-class Professer:
+class Professer(Wizard):
     def __init__(self, name, subject):
         super().__init__(name)
         self.subject = subject
