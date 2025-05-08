@@ -20,11 +20,11 @@
     #print("Invalid")
 
 #the third version
-# import re
+import re
 
-# email = input("What's your email").strip()
+email = input("What's your email").strip()
 
-# if re.search(r"^\w+@(\w+\.)?\w+\.(com|edu|gov|net|org)$", email , re.IGNORECASE):   #[a-zA-Z0-9_] = \w
-#     print("Valid")
-# else:
-#     print("Invalid")
+if re.search(r"^\w+@(\w+\.)?\w+\.(com|edu|gov|net|org)$", email , re.IGNORECASE):   #[a-zA-Z0-9_] = \w
+    print("Valid")
+else:
+    print("Invalid")

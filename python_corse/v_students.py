@@ -91,14 +91,14 @@
 #     print(f"{student['name']} is in {student['home']}")
 
 # the tenth version
-# import csv
+import csv
 
-# name = input("What's your name?")
-# home = input("What's your home?")
+name = input("What's your name?")
+home = input("What's your home?")
 
-# with open("students.csv","a") as file:
-#     writer = csv.writer(file)
-#     writer.writerow([[name,home]])
+with open("students.csv","a") as file:
+    writer = csv.writer(file)
+    writer.writerow([[name,home]])
         
 # the eleventh version
 # import csv
