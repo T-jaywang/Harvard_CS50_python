@@ -29,7 +29,7 @@ def get_item_list():
         except EOFError:
             break
 
-    return items    
+    return sorted(items)
 
 def return_total(item_list):
     total_price = 0
