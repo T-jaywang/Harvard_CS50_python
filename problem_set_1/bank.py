@@ -1,4 +1,3 @@
-
 def main():
     greet = input("Greeting:").strip().lower()
 
