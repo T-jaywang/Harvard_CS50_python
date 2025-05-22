@@ -11,7 +11,7 @@ def evaluate_arg():
     if len(sys.argv) < 2:
         sys.exit("Too few argument.")
     if not sys.argv[-1].endswith(".py"):
-        sys.exit("not python file.")
+        sys.exit("Choose python file.")
 
 
 def count_line():

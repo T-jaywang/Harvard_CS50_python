@@ -1,4 +1,4 @@
-from bank_ import value
+from problem_set_5.bank import value
 
 def test_startwith_hello():
     assert value("hello, my name is jay.") == "$0"

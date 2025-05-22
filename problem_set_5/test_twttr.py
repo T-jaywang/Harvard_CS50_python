@@ -1,4 +1,4 @@
-from twttr_ import shorten
+from problem_set_5.twttr import shorten
 
 def test_lowercase():
     assert shorten("twitter") == "twttr"
