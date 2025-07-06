@@ -2,13 +2,9 @@ import sys
 import os
 from PIL import Image, ImageOps
 
-
-
-
 def main():
     input_file, output_file = evaluate_args()
     overlay_shirt(input_file, output_file)
-
 
 def evaluate_args():
     if len(sys.argv) > 3:
@@ -36,7 +32,6 @@ def evaluate_args():
 
     return (input_file, output_file)
 
-
 def overlay_shirt(input_file, output_file):
     shirt = Image.open(os.path.join(os.path.dirname(__file__), "shirt.png"))
     photo = Image.open(input_file)
@@ -45,8 +40,6 @@ def overlay_shirt(input_file, output_file):
 
     photo.paste(shirt,(0, 0),shirt)
     photo.save(output_file)
-
-
 
 if __name__ == "__main__":
     main()

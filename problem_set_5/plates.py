@@ -19,8 +19,6 @@ def is_valid(s):
     if List[0] == "0":
         return False
 
-
-
     for word in s:
         if word in [",", " ", "-","."]:
             return False
