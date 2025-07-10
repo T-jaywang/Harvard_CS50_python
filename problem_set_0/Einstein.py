@@ -1,7 +1,17 @@
-c = 3 * 10 ** 8
 
-m = float(input("How many kg?"))
+def main():
+    kilogram = get_kilogram()
+    energy = kilogram_convert_energy(kilogram)
+    print(energy)
 
-E = m * (c ** 2)
+def get_kilogram():
+    m = float(input("How many kg?"))
+    return m
 
-print(E)
+def kilogram_convert_energy(m):
+    c = 3 * 10 ** 8
+    E = m * (c ** 2)
+    return E
+
+if __name__ == "__main__":
+    main()
