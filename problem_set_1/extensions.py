@@ -5,7 +5,7 @@ def main():
     if file_name.endswith("gif"):
         print("image/gif")
     elif file_name.endswith(".jpg") or file_name.endswith("jpeg"):
-        print("image/jepg")
+        print("image/jpeg")
     elif file_name.endswith(".png"):
         print("image/png")
     elif file_name.endswith(".pdf"):
@@ -16,9 +16,6 @@ def main():
         print("application/zip")
     else:
         print("application/octet-stream")
-    
-
-
 
 if __name__ == "__main__":
     main()

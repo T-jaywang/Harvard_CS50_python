@@ -1,12 +1,20 @@
 def main():
-    greet = input("Greeting:").strip().lower()
-
+    greet = get_greet()
+    n = evaluate_greet(greet)
+    print(n)
+    
+def evaluate_greet(greet):
     if greet.startswith("hello"):
-        print("$0")
+        return("$0")
     elif greet.startswith("h"):
-        print("$20")
+        return("$20")
     else:
-        print("$100")
+        return("$100")
 
-main()
+def get_greet():
+    greet = input("Greeting:").strip().lower()
+    return greet
+
+if __name__ == "__main__":
+    main()
     

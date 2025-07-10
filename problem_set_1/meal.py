@@ -5,9 +5,11 @@ def main():
         time = time.replace("a.m.","")
     elif time.endswith("p.m."):
         time = time.replace("p.m.","")
+
         hour , minute = time.split(":")
         hour = int(hour)
         minute = int(minute)
+
         if hour != 12:
             hour += 12
         

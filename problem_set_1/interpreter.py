@@ -1,17 +1,27 @@
-expression = input("Expression: ")
+def main():
+    x, y, z = get_expression()
+    answer = caculate(x, y, z)
+    print(answer)
 
-x,y,z = expression.split(" ")
+def get_expression():
+    expression = input("Expression: ")
+    x,y,z = expression.split(" ")
+    return(x, y, z)
 
-if y == "+":
-    ans = float(x) + float(z)
-elif y == "-":
-    ans = float(x) - float(z)
-elif y == "*":
-    ans = float(x) * float(z)
-elif y == "/":
-    ans = float(x) / float(z)
+def caculate(x, y, z):
+    if y == "+":
+        ans = float(x) + float(z)
+    elif y == "-":
+        ans = float(x) - float(z)
+    elif y == "*":
+        ans = float(x) * float(z)
+    elif y == "/":
+        ans = float(x) / float(z)
 
-print(ans)
+    return ans
+
+if __name__ == "__main__":
+    main()
 
 
 
