@@ -13,6 +13,7 @@ def main():
 def get_coin():
     coin = int(input("Insert coin: "))
     if coin not in [5,10,25]:
+        print("coin only (5, 10, 25)")
         coin = 0
     return coin
 

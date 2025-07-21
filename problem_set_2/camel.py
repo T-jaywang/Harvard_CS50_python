@@ -1,5 +1,3 @@
-
-
 camelcase = input("camelCase: ")
 
 sanke_case = ""

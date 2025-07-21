@@ -1,12 +1,12 @@
 def main():
     plate = input("Plate: ")
-    if is_valid(plate):
+    if validate(plate):
         print("Valid")
     else:
         print("Invalid")
 
 
-def is_valid(s):
+def validate(s):
     if not (2 <= len(s) <= 6):
         return False
     
@@ -28,6 +28,5 @@ def is_valid(s):
 
     return True
     
-
-
-main()
+if __name__ == "__main__":
+    main()

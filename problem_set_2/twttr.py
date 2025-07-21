@@ -1,5 +1,12 @@
 def main():
+    words = get_words()
+    print(replace_alphabat(words))
+
+def get_words():
     words = input("Input: ")
+    return words
+
+def replace_alphabat(words):
     output = ""
     for word in words:
         if word in ["A","E","I","O","U"]:
@@ -8,7 +15,7 @@ def main():
             output += ""
         else:
             output += word
-    print(f"Output: {output}")
+    return f"Output: {output}"
 
 
 if __name__ == "__main__":
