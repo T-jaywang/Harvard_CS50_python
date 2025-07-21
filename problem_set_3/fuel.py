@@ -2,8 +2,6 @@ def main():
     x,y = get_input()
     number = division_to_precent(x,y)
     print(percent(number))
-    
-
 
 def get_input():
     while True:
@@ -23,9 +21,6 @@ def get_input():
         except ZeroDivisionError:
             print("y can't be zero.")
         
-
-
-
 def division_to_precent(x,y):
     return round((x / y) * 100)
 
@@ -36,9 +31,6 @@ def percent(p):
         return "F"
     else:
         return f"{p}%"
-    
-
-
     
 if __name__ == "__main__":
     main()
